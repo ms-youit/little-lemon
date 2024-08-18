@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #495E57;
+  --secondary-color: #F4CE14;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Markazi Text", serif;
+  font-family: "Karla", sans-serif;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* General classes */
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 5vw;
+}
+.cta {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  color: #000;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 20px;
+  transition: background-color 0.1s;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+.main-header .logo {
+  width: 180px;
+}
+
+/* Navbar */
+.main-nav .nav-items {
+  display: flex;
+  gap: 1rem;
+}
+.main-nav .nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: color 0.1s;
+}
+.main-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-block: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.hero .title {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Markazi Text", serif;
+  color: var(--secondary-color);
+  line-height: 40px;
+  margin-bottom: 1rem;
+}
+.hero .title > span {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.hero .description {
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 40ch;
+  margin-block: 2rem;
+  line-height: 1.5;
+}
+.hero .hero-image {
+  width: 100%;
+  max-width: 400px;
+}
+.hero .cta {
+  margin-top: 20px;
+}
+.hero .cta:hover {
+  background-color: #fff;
+}
+
+/* Categories */
+.categories {
+  margin-block: 3rem;
+}
+.categories .title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.categories .cats {
+  display: flex;
+  gap: 1rem;
+  overflow: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.categories .cat {
+  background-color: #EDEFEE;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* Meals */
+.meals {
+  margin-block: 2rem;
+}
+.meals .meal {
+  margin-bottom: 2rem;
+}
+.meals .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.meals .description {
+  color: #495E57;
+  max-width: 45ch;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.meals .price {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Booking form */
+.booking-form {
+  padding-block: 3rem;
+}
+.booking-form .title {
+  font-size: 3rem;
+  font-family: 'Markazi Text';
+  margin-bottom: 1rem;
+}
+.booking-form form {
+  max-width: 500px;
+  margin: auto;
+}
+.booking-form .form-group {
+  margin-bottom: 1rem;
+}
+.booking-form label {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.booking-form label:has(+ :required)::after {
+  content: ' *';
+  color: red;
+}
+.booking-form input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-inline: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 7px;
+}
+.booking-form .cta {
+  border: none;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.booking-form .error {
+  color: red;
+  margin-top: 5px;
+}
