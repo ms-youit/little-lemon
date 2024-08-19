@@ -2,7 +2,7 @@ import hero from '../assets/hero.jpg';
 
 export default function Hero() {
     return (
-        <div className="hero">
+        <section className="hero">
             <div className="container">
                 <div className="hero-copy">
                     <h1 className="title">
@@ -22,6 +22,6 @@ export default function Hero() {
                     <img src={hero} alt="" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,6 +1,6 @@
 export default function Categories() {
     return (<div className="categories">
-        <div className="container">
+        <section className="container">
             <h2 className="title">Order FOR DELIVERY!</h2>
 
             <div className="cats">
@@ -10,6 +10,6 @@ export default function Categories() {
                 <div className="cat">A La Carte</div>
                 <div className="cat">Specials</div>
             </div>
-        </div>
+        </section>
     </div>)
 }
